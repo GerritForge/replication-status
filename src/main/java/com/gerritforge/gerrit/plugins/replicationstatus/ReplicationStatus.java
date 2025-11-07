@@ -1,10 +1,7 @@
-// Copyright (C) 2021 The Android Open Source Project
+// Copyright (C) 2025 GerritForge, Inc.
 //
-// Licensed under the Apache License, Version 2.0 (the "License");
+// Licensed under the BSL 1.1 (the "License");
 // you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,14 +9,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.replicationstatus;
+package com.gerritforge.gerrit.plugins.replicationstatus;
 
 import com.google.auto.value.AutoValue;
 import com.google.common.flogger.FluentLogger;
 import com.google.gerrit.entities.Project;
 import com.google.gerrit.proto.Protos;
 import com.google.gerrit.server.cache.serialize.CacheSerializer;
-import com.googlesource.gerrit.plugins.replicationstatus.proto.Cache;
+import com.gerritforge.gerrit.plugins.replicationstatus.proto.Cache;
 
 @AutoValue
 public abstract class ReplicationStatus {
