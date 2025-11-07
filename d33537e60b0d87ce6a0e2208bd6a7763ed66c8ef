@@ -16,6 +16,24 @@
       "message": "I believe you haven\u0027t applied the refactoring correctly: the new package name is `plugins.replication-status.src.main.java.com.gerritforge` which doesn\u0027t make sense to me.",
       "revId": "d33537e60b0d87ce6a0e2208bd6a7763ed66c8ef",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4a9f842_28f20a8b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020677
+      },
+      "writtenOn": "2025-11-07T15:01:21Z",
+      "side": 1,
+      "message": "Did you mean the comment in the proto file? Yeah that was wrong, good spot.\n\nSorted it now, the rest seems fine?",
+      "parentUuid": "8daf7668_bd9044ac",
+      "revId": "d33537e60b0d87ce6a0e2208bd6a7763ed66c8ef",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
