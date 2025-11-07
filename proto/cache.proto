@@ -16,9 +16,9 @@ syntax = "proto3";
 
 package replicationstatus.cache;
 
-option java_package = "com.googlesource.gerrit.plugins.replicationstatus.proto";
+option java_package = "com.gerritforge.gerrit.plugins.replicationstatus.proto";
 
-// Serialized form of com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.Key.
+// Serialized form of com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.Key.
 // Next ID: 4
 message ReplicationStatusKeyProto {
   string project = 1;
@@ -26,7 +26,7 @@ message ReplicationStatusKeyProto {
   string ref = 3;
 }
 
-// Serialized form of com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.
+// Serialized form of com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.
 // Next ID: 4
 message ReplicationStatusProto {
   int64 when = 1;

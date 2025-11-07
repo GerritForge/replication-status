@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.replicationstatus;
+package com.gerritforge.gerrit.plugins.replicationstatus;
 
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.Key;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationStatusResult;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationStatusResult.SCHEDULED;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PULL;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PUSH;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.Key;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationStatusResult;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationStatusResult.SCHEDULED;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PULL;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PUSH;
 
 import com.google.common.cache.Cache;
 import com.google.gerrit.common.Nullable;
