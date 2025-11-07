@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.replicationstatus;
+package com.gerritforge.gerrit.plugins.replicationstatus;
 
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.gerrit.acceptance.testsuite.project.TestProjectUpdate.allow;
 import static com.google.gerrit.extensions.restapi.Url.encode;
 import static com.googlesource.gerrit.plugins.replication.ReplicationState.RefPushResult;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PULL;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PUSH;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PULL;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PUSH;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.gerrit.acceptance.LightweightPluginDaemonTest;
@@ -53,7 +53,7 @@ import org.junit.Test;
 
 @TestPlugin(
     name = "replication-status",
-    sysModule = "com.googlesource.gerrit.plugins.replicationstatus.Module")
+    sysModule = "com.gerritforge.gerrit.plugins.replicationstatus.Module")
 public class ReplicationStatusIT extends LightweightPluginDaemonTest {
   private static final String REF_MASTER = Constants.R_HEADS + Constants.MASTER;
   private static final String REMOTE = "ssh://some.remote.host";

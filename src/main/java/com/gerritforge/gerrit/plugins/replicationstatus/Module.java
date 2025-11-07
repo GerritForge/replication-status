@@ -12,18 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.replicationstatus;
+package com.gerritforge.gerrit.plugins.replicationstatus;
 
-import com.google.gerrit.server.cache.CacheModule;
+import com.google.gerrit.extensions.registration.DynamicSet;
+import com.google.gerrit.lifecycle.LifecycleModule;
+import com.google.gerrit.server.events.EventListener;
 
-public class ReplicationStatusCacheModule extends CacheModule {
-
+class Module extends LifecycleModule {
   @Override
   protected void configure() {
-    persist(ReplicationStatus.CACHE_NAME, ReplicationStatus.Key.class, ReplicationStatus.class)
-        .version(1)
-        .diskLimit(-1)
-        .keySerializer(ReplicationStatus.Key.Serializer.INSTANCE)
-        .valueSerializer(ReplicationStatus.Serializer.INSTANCE);
+    DynamicSet.bind(binder(), EventListener.class).to(EventHandler.class);
+    install(new ReplicationStatusApiModule());
+    install(new ReplicationStatusCacheModule());
   }
 }

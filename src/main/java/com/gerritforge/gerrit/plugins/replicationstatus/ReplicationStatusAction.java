@@ -12,9 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.replicationstatus;
+package com.gerritforge.gerrit.plugins.replicationstatus;
 
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.CACHE_NAME;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.CACHE_NAME;
 
 import com.google.common.cache.Cache;
 import com.google.gerrit.entities.Project;
