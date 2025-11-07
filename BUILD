@@ -11,9 +11,9 @@ gerrit_plugin(
     srcs = glob(["src/main/java/**/*.java"]),
     manifest_entries = [
         "Gerrit-PluginName: replication-status",
-        "Gerrit-Module: com.googlesource.gerrit.plugins.replicationstatus.Module",
+        "Gerrit-Module: com.gerritforge.gerrit.plugins.replicationstatus.Module",
         "Implementation-Title: Replication Status",
-        "Implementation-URL: https://gerrit.googlesource.com/plugins/replication-status",
+        "Implementation-URL: https://github.com/GerritForge/replication-status",
     ],
     resources = glob(["src/main/resources/**/*"]),
     deps = [
