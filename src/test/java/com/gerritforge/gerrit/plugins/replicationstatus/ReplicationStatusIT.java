@@ -1,10 +1,7 @@
-// Copyright (C) 2021 The Android Open Source Project
+// Copyright (C) 2025 GerritForge, Inc.
 //
-// Licensed under the Apache License, Version 2.0 (the "License");
+// Licensed under the BSL 1.1 (the "License");
 // you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
 //
 // Unless required by applicable law or agreed to in writing, software
 // distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,14 +9,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.replicationstatus;
+package com.gerritforge.gerrit.plugins.replicationstatus;
 
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.gerrit.acceptance.testsuite.project.TestProjectUpdate.allow;
 import static com.google.gerrit.extensions.restapi.Url.encode;
 import static com.googlesource.gerrit.plugins.replication.ReplicationState.RefPushResult;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PULL;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PUSH;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PULL;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatus.ReplicationType.PUSH;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.gerrit.acceptance.LightweightPluginDaemonTest;
@@ -53,7 +50,7 @@ import org.junit.Test;
 
 @TestPlugin(
     name = "replication-status",
-    sysModule = "com.googlesource.gerrit.plugins.replicationstatus.Module")
+    sysModule = "com.gerritforge.gerrit.plugins.replicationstatus.Module")
 public class ReplicationStatusIT extends LightweightPluginDaemonTest {
   private static final String REF_MASTER = Constants.R_HEADS + Constants.MASTER;
   private static final String REMOTE = "ssh://some.remote.host";
