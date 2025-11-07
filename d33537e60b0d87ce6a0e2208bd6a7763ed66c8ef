@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8daf7668_bd9044ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-11-07T13:30:38Z",
+      "side": 1,
+      "message": "I believe you haven\u0027t applied the refactoring correctly: the new package name is `plugins.replication-status.src.main.java.com.gerritforge` which doesn\u0027t make sense to me.",
+      "revId": "d33537e60b0d87ce6a0e2208bd6a7763ed66c8ef",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
