@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.replicationstatus;
+package com.gerritforge.gerrit.plugins.replicationstatus;
 
 import com.google.auto.value.AutoValue;
 import com.google.common.flogger.FluentLogger;
 import com.google.gerrit.entities.Project;
 import com.google.gerrit.proto.Protos;
 import com.google.gerrit.server.cache.serialize.CacheSerializer;
-import com.googlesource.gerrit.plugins.replicationstatus.proto.Cache;
+import com.gerritforge.gerrit.plugins.replicationstatus.proto.Cache;
 
 @AutoValue
 public abstract class ReplicationStatus {

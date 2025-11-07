@@ -12,10 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package com.googlesource.gerrit.plugins.replicationstatus;
+package com.gerritforge.gerrit.plugins.replicationstatus;
 
 import static com.google.gerrit.server.project.ProjectResource.PROJECT_KIND;
-import static com.googlesource.gerrit.plugins.replicationstatus.ReplicationStatusProjectRemoteResource.REPLICATION_STATUS_PROJECT_REMOTE_KIND;
+import static com.gerritforge.gerrit.plugins.replicationstatus.ReplicationStatusProjectRemoteResource.REPLICATION_STATUS_PROJECT_REMOTE_KIND;
 
 import com.google.gerrit.extensions.registration.DynamicMap;
 import com.google.gerrit.extensions.restapi.RestApiModule;
