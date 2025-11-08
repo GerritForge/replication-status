@@ -16,6 +16,24 @@
       "message": "AFAIR we agreed that it should go to GH 😉",
       "revId": "7181353990c8a286a9b719b732d3da5df86e97a3",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2d8c4f3_0dbf6ac6",
+        "filename": "BUILD",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-11-08T22:06:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "794137e4_997360f9",
+      "revId": "7181353990c8a286a9b719b732d3da5df86e97a3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
