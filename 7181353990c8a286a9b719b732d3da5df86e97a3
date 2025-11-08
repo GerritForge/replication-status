@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "794137e4_997360f9",
+        "filename": "BUILD",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1019121
+      },
+      "writtenOn": "2025-11-08T08:41:59Z",
+      "side": 1,
+      "message": "AFAIR we agreed that it should go to GH 😉",
+      "revId": "7181353990c8a286a9b719b732d3da5df86e97a3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
