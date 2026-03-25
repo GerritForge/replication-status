@@ -20,7 +20,6 @@ gerrit_plugin(
         ":replication-neverlink",
         "//java/com/google/gerrit/proto",
         "//plugins/replication-status/proto:replication_status_cache_java_proto",
-        "@error-prone-annotations//jar",
     ],
 )
 
