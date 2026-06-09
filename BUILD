@@ -1,13 +1,11 @@
 load(
-    "//tools/bzl:plugin.bzl",
-    "PLUGIN_DEPS",
-    "PLUGIN_TEST_DEPS",
+    "@com_googlesource_gerrit_bazlets//:gerrit_plugin.bzl",
     "gerrit_plugin",
+    "gerrit_plugin_tests",
 )
-load("//tools/bzl:junit.bzl", "junit_tests")
+load("@rules_java//java:java_library.bzl", "java_library")
 
 gerrit_plugin(
-    name = "replication-status",
     srcs = glob(["src/main/java/**/*.java"]),
     manifest_entries = [
         "Gerrit-PluginName: replication-status",
@@ -15,6 +13,7 @@ gerrit_plugin(
         "Implementation-Title: Replication Status",
         "Implementation-URL: https://github.com/GerritForge/replication-status",
     ],
+    plugin = "replication-status",
     resources = glob(["src/main/resources/**/*"]),
     deps = [
         ":replication-neverlink",
@@ -23,27 +22,15 @@ gerrit_plugin(
     ],
 )
 
-junit_tests(
+gerrit_plugin_tests(
     name = "replicationstatus_tests",
     srcs = glob(["src/test/java/**/*.java"]),
-    resources = glob(["src/test/resources/**/*"]),
-    deps = [
-        ":replicationstatus__plugin_test_deps",
-    ],
+    plugin = "replication-status",
+    deps = ["//plugins/replication"],
 )
 
 java_library(
     name = "replication-neverlink",
     neverlink = 1,
     exports = ["//plugins/replication"],
-)
-
-java_library(
-    name = "replicationstatus__plugin_test_deps",
-    testonly = 1,
-    visibility = ["//visibility:public"],
-    exports = PLUGIN_DEPS + PLUGIN_TEST_DEPS + [
-        ":replication-status__plugin",
-        "//plugins/replication",
-    ],
 )
