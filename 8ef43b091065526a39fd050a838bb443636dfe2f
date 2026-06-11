@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c783c89_60d25cc2",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2026-06-11T09:45:22Z",
+      "side": 1,
+      "message": "Unrelated to bzlmod migration, why it\u0027s needed?\n\nIt\u0027s included in gerrit.war, and also in Plugin API. Remove it.",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 41
+      },
+      "revId": "8ef43b091065526a39fd050a838bb443636dfe2f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d03ba3e6_0dff864e",
+        "filename": "BUILD",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1000177
+      },
+      "writtenOn": "2026-06-11T09:45:22Z",
+      "side": 1,
+      "message": "Remove name.\n\n```suggestion\n    srcs \u003d glob([\"src/test/java/**/*.java\"]),\n```",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 45
+      },
+      "revId": "8ef43b091065526a39fd050a838bb443636dfe2f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
