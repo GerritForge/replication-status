@@ -14,9 +14,11 @@ gerrit_plugin(
         "Gerrit-Module: com.gerritforge.gerrit.plugins.replicationstatus.Module",
         "Implementation-Title: Replication Status",
         "Implementation-URL: https://github.com/GerritForge/replication-status",
+        "Gerrit-HttpModule: com.gerritforge.gerrit.plugins.bsl.HttpModule",
     ],
     resources = glob(["src/main/resources/**/*"]),
     deps = [
+        "//plugins/gerrit-bsl-license",
         ":replication-neverlink",
         "//java/com/google/gerrit/proto",
         "//plugins/replication-status/proto:replication_status_cache_java_proto",
